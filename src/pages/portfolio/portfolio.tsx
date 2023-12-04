@@ -70,9 +70,6 @@ export const PortFolioTracker = () => {
   const isKeyInDBFunction = () => {
     axios
       .get("https://port-0-coin-market-be-12fhqa2llob5p0if.sel5.cloudtype.app/user/apikey", {
-        headers: {
-          "Content-Type": "application/json",
-        },
         withCredentials: true,
       })
       .then((response) => {
